@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>21 BlackJack</title>
+</head>
+<body>
+    
+    <header class="title-container">
+
+        <h1>21 BlackJack</h1>
+
+    </header>
+
+    <main>
+
+        <section class="button-container-section">
+
+            <div class="button-container">
+    
+                <button id="btn-new" class="btn-primary btn-new">Nuevo Juego</button>
+                <button id="btn-more" class="btn-primary btn-more">Pedir Carta</button>
+                <button id="btn-stop" class="btn-primary btn-stop">Mantener Cartas</button>
+    
+            </div>
+    
+        </section>
+    
+        <section class="table-section">
+    
+            <div class="table-section-container">
+    
+                <h2>Jugador 1 - <span id="puntos-jugador">0</span></h2>
+    
+                <div class="jugador-cartas" id="jugador-cartas">
+    
+                    <!-- Se añaden Cartas desde JavaScript -->
+
+                </div>
+    
+            </div>
+    
+        </section>
+    
+        <section class="table-section">
+    
+            <div class="table-section-container">
+    
+                <h2>Computadora - <span id="puntos-computadora">0</span></h2>
+    
+                <div class="jugador-cartas" id="computadora-cartas">
+
+                    <!-- Se añaden Cartas desde JavaScript -->
+                    
+                </div>
+    
+            </div>
+    
+        </section>
+
+    </main>
+
+    <script src="./assets/js/underscore.js"></script>
+    <script src="./assets/js/juego-min.js"></script>
+
+    <script>
+
+        moduloBlackJack.nuevoJuego();
+
+    </script>
+
+</body>
+</html>

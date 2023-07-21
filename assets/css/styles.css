@@ -1,0 +1,145 @@
+/* Forma de Agregar Estilos
+1. Posicionamiento --> static, absolute, relative, fixed.
+2. Modelo de caja (Box model) --> margin, border, padding, content.
+3. Tipografía --> tipos, tamaños de fuente, etc.
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc.
+5. Otros --> reglas CSS y más.
+*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    font-size: 62.5%;
+    font-family: 'Victor Mono', monospace;
+
+}
+
+body {
+
+    background-color: #306423;
+
+}
+
+.title-container {
+
+    width: 100%;
+    min-width: 378px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    background-color: #333130;
+
+}
+
+.title-container h1 {
+
+    text-align: center;
+    font-size: 2.6rem;
+    color: aliceblue;
+
+}
+
+main {
+
+    display: grid;
+    place-content: center;
+
+}
+
+.button-container-section {
+
+    width: 100%;
+    display: grid;
+    place-content: center;
+    margin-top: 50px;
+
+}
+
+.btn-primary {
+
+    text-align: center;
+    height: 40px;
+    width: 120px;
+    font-weight: 500;
+    padding: 4px;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn-primary:hover {
+
+    color: #E3D420;
+    border: #E3D420 solid 2px;
+    opacity: 80%;
+    cursor: pointer;
+
+}
+
+.btn-new {
+
+    background-color: #333130;
+
+}
+
+.btn-more {
+
+    background-color: #197ED2;
+
+}
+
+.btn-stop {
+
+    background-color: #D33D1D;
+
+}
+
+.table-section {
+
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.table-section-container {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.table-section-container h2 {
+
+    align-self: center;
+    margin-bottom: 8px;
+    font-size: 2rem;
+    color: aliceblue;
+
+}
+
+.jugador-cartas {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 80px;
+    height: 200px;
+
+}
+
+.carta {
+
+    position: relative;
+    margin-left: -75px;
+    width: 150px;
+
+}
